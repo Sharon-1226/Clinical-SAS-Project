@@ -1,0 +1,48 @@
+data mylib.vs_raw;
+input Patient_ID $ Visit $ SBP DBP Heart_Rate Temperature;
+datalines;
+P001 Baseline 120 80 72 36.5
+P001 Week4 118 78 70 36.6
+P002 Baseline 130 85 80 36.7
+P002 Week4 125 82 78 36.5
+P003 Baseline 125 82 76 36.8
+P003 Week4 122 80 74 36.6
+P004 Baseline 135 90 85 37.0
+P004 Week4 130 85 82 36.8
+P005 Baseline 118 75 70 36.4
+P005 Week4 115 72 68 36.5
+P006 Baseline 122 80 74 36.6
+P006 Week4 120 78 72 36.5
+P007 Baseline 128 84 78 36.7
+P007 Week4 124 80 76 36.6
+P008 Baseline 140 92 88 37.1
+P008 Week4 135 88 84 36.9
+P009 Baseline 115 75 68 36.5
+P009 Week4 112 72 66 36.4
+P010 Baseline 132 86 82 36.8
+P010 Week4 128 82 80 36.7
+P011 Baseline 120 78 72 36.5
+P011 Week4 118 76 70 36.5
+P012 Baseline 138 90 86 37.0
+P012 Week4 132 86 82 36.8
+P013 Baseline 125 80 75 36.6
+P013 Week4 122 78 72 36.5
+P014 Baseline 118 76 70 36.5
+P014 Week4 116 74 68 36.4
+P015 Baseline 130 85 80 36.8
+P015 Week4 126 82 78 36.6
+P016 Baseline 124 82 76 36.7
+P016 Week4 121 80 74 36.5
+P017 Baseline 136 88 84 37.0
+P017 Week4 132 85 80 36.8
+P018 Baseline 115 72 68 36.4
+P018 Week4 112 70 66 36.5
+P019 Baseline 128 84 78 36.7
+P019 Week4 124 80 75 36.6
+P020 Baseline 142 94 90 37.1
+P020 Week4 136 88 85 36.9
+;
+run;
+
+proc print data=mylib.vs_raw;
+run;
